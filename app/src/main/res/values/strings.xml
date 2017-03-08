@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Meanor Banjo Rental Service</string>
+
+    <string name="numInstrumentsLabel"># of</string>
+    <string name="numCasesLabel"># of cases</string>
+
+    <string name="numBanjosEdit">0</string>
+    <string name="numCasesEdit">0</string>
+
+    <string name="baseRentalFeesLabel">Base Rental Fees:</string>
+    <string name="baseRentalFeesValue">$0.00</string>
+
+    <string name="stateSalesTaxLabel">State Sales Tax:</string>
+    <string name="stateSalesTaxvalue">$0.00</string>
+
+    <string name="insuranceLabel">Insurance:</string>
+    <string name="insuranceValue">$0.00</string>
+
+    <string name="totalCostLabel">Total Cost:</string>
+    <string name="totalCostValue">$0.00</string>
+    
+    <string-array name="instruments">
+        <item>Banjos</item>
+        <item>Violins</item>
+        <item>Ukuleles</item>
+        <item>Mandolins</item>
+    </string-array>
+</resources>

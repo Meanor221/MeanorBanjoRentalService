@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.aam5617.meanorbanjorentalservice.MainActivity"
+    android:background="@drawable/banjo">
+
+    <TextView
+        android:text="@string/numCasesLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/numBanjosLabel"
+        android:layout_below="@+id/numBanjosLabel"
+        android:id="@+id/numCasesLabel"
+        android:textSize="24sp"
+        android:textColor="@android:color/background_dark" />
+
+    <EditText
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="@string/numCasesEdit"
+        android:layout_below="@+id/numBanjosEditText"
+        android:layout_alignLeft="@+id/numBanjosEditText"
+        android:layout_alignRight="@+id/numBanjosEditText"
+        android:layout_alignBaseline="@id/numCasesLabel"
+        android:id="@+id/numCasesEditText"
+        android:textAlignment="center" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@id/numBanjosEditText"
+        android:id="@+id/calculatedValuesLayout">
+
+        <TextView
+            android:text="@string/baseRentalFeesLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="11dp"
+            android:layout_marginStart="11dp"
+            android:layout_marginTop="70dp"
+            android:id="@+id/baseRentalFeesLabel"
+            android:textSize="24sp"
+            android:textColor="@android:color/background_dark" />
+
+        <TextView
+            android:text="@string/stateSalesTaxLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/baseRentalFeesLabel"
+            android:layout_alignLeft="@+id/baseRentalFeesLabel"
+            android:layout_alignRight="@+id/baseRentalFeesLabel"
+            android:id="@+id/stateSalesTaxLabel"
+            android:textSize="24sp"
+            android:textColor="@android:color/background_dark" />
+
+        <TextView
+            android:text="@string/baseRentalFeesValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/baseRentalFeeValue"
+            android:layout_alignTop="@+id/baseRentalFeesLabel"
+            android:layout_alignParentRight="true"
+            android:textSize="24sp"
+            android:textColor="@android:color/background_dark" />
+
+        <TextView
+            android:text="@string/insuranceValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/insuranceValue"
+            android:layout_below="@+id/stateSalesTaxValue"
+            android:layout_alignParentRight="true"
+            android:textSize="24sp"
+            android:textColor="@android:color/background_dark" />
+
+        <TextView
+            android:text="@string/insuranceLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/insuranceLabel"
+            android:textSize="24sp"
+            android:layout_below="@+id/stateSalesTaxLabel"
+            android:layout_alignLeft="@+id/stateSalesTaxLabel"
+            android:layout_alignRight="@+id/stateSalesTaxLabel"
+            android:textColor="@android:color/background_dark" />
+        <TextView
+            android:text="@string/totalCostValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/totalCostValue"
+            android:textSize="24sp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/insuranceValue"
+            android:textColor="@android:color/background_dark" />
+
+        <TextView
+            android:text="@string/totalCostLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/totalCostLabel"
+            android:textSize="24sp"
+            android:layout_below="@+id/insuranceLabel"
+            android:layout_alignLeft="@+id/insuranceLabel"
+            android:layout_alignRight="@+id/insuranceLabel"
+            android:textColor="@android:color/background_dark" />
+
+        <TextView
+            android:text="@string/stateSalesTaxvalue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/stateSalesTaxValue"
+            android:textSize="24sp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/baseRentalFeeValue"
+            android:textColor="@android:color/background_dark"/>
+    </RelativeLayout>
+
+    <EditText
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="@string/numBanjosEdit"
+        android:id="@+id/numBanjosEditText"
+        android:layout_toRightOf="@id/instrumentSpinner"
+        android:layout_alignBaseline="@+id/numBanjosLabel"
+        android:textAlignment="center" />
+
+    <TextView
+        android:text="@string/numInstrumentsLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/numBanjosLabel"
+        android:textSize="24sp"
+        android:layout_marginTop="70dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="@android:color/background_dark" />
+
+    <TextView
+        android:text="@string/insuranceLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/numCasesLabel"
+        android:layout_alignRight="@id/numCasesLabel"
+        android:layout_below="@+id/numCasesLabel"
+        android:id="@+id/insuranceSwitchLabel"
+        android:textSize="24sp"
+        android:textColor="@android:color/background_dark" />
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/insuranceSwitch"
+        android:showText="true"
+        android:textOn="On"
+        android:textOff="Off"
+        android:layout_toRightOf="@id/insuranceSwitchLabel"
+        android:layout_alignLeft="@id/numCasesEditText"
+        android:layout_alignRight="@id/numCasesEditText"
+        android:layout_alignBaseline="@id/insuranceSwitchLabel"/>
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/numBanjosLabel"
+        android:layout_alignTop="@id/numBanjosLabel"
+        android:entries="@array/instruments"
+        android:id="@+id/instrumentSpinner" />
+</RelativeLayout>
